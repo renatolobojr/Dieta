@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div>
+            
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem" checked>
+                    <label for="fem">Feminino</label>
+                    <p>Idade:
+                        <input type="number" name="txtidade" id="txtidade" >Anos
+                    <p>Peso:
+                        <input type="number" name="txtpeso" id="txtpeso" >Kg
+                    <p>Altura:
+                        <input type="number" name="txtaltura" id="txtaltura" > cm
+                    <p>Fator de Atividade:
+                        <input type="radio" name="radact" id="sedentario" >    
+                        <label for="sedentario">Sedentario</label>
+                        <input type="radio" name="radact" id="Pouco ativo" checked>
+                        <label for="pouco ativo">Pouco Ativo</label>  
+                        <input type="radio" name="radact" id="ativo">    
+                        <label for="ativo">Ativo</label>
+                        <input type="radio" name="radact" id="muito ativo" checked>
+                        <label for="muito ativo">Muito Ativo</label> 
+                    
+                </p>
+               <p>
+                <input type="button" value="Calcular" onclick="calcular()">
+               </p> 
+            </p>
+        </div>
+        <div id="res">
+            Prencha os dados para ver o resultado.
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Calculadora</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
