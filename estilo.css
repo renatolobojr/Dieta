@@ -1,0 +1,71 @@
+body
+{
+    background: darkgreen;
+    background-image: url('imagens/imagem1.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+a
+{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+a:link
+{
+    color: salmon;
+}
+a:active
+{
+    color: yellowgreen;
+}
+a:hover
+{
+    color: white;
+    background: black;
+}
+#cabecalho
+{
+    border: 1px solid red;
+    
+    margin: 0px 0px;
+    background:blue;
+}
+
+#logo
+{
+    height: 50px;
+   
+    text-align: center;
+}
+
+#menu
+{
+    padding: 10px;
+    text-align: center;
+}
+
+#dieta
+{
+    color: white;
+    text-transform:uppercase;
+}
+
+#calculadora
+{
+    border: 1px solid red;
+    width: 460px;
+    padding: 10px;
+    margin: 10px auto;
+    float: left;
+    font-size: 1.5em;
+}
+
+#lero
+{
+    border: 1px solid blue;
+    padding: 5px;
+    float: left;
+    width: 460px;
+    font-size: 1.5em;
+}
