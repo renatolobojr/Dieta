@@ -19,79 +19,28 @@
 
 <body>
 
-    <header>   
-        <div  Class="topo">
-            <div style="padding: 5px;background-color: rgba(235, 232, 232, 0.5)">
-                <H1>Real Talk <br> Diet Plans</H1>
-                <p><strong> Monte sua dieta <br> sem frescuras</strong></p>
-            </div>
-        </div>
-
-        <Nav class="pure-menu pure-menu-horizontal">
-            <!-- this is where our nav menu will go -->
-            <a href="#" class="pure-menu-heading pure-menu-link">RT </a>
-        
-            <ul class="pure-menu-list">
-        
-                <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Blog</a></li>
-                                     
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                    <a href="#" id="menuLink1" class="pure-menu-link">Dieta</a>
-                    <ul class="pure-menu-children">
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Calculadoras</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Diet Plans</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Personalize</a></li>
-                    </ul>
-                </li>
-             
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                    <a href="#" id="menuLink1" class="pure-menu-link">Contatos</a>
-                    <ul class="pure-menu-children">
-                        <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Redes Sociais</a></li>
-                        <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Parceiros</a> </li>
-                        <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Trabalhe conosco</a> </li>
-                        <li class="pure-menu-item"> <a href="#" class="pure-menu-link">reporte um erro</a> </li>
-                    </ul>
-                </li>
-        
-                
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sobre</a></li>
-        
-            </ul>
-        
-        </Nav>
-        
+    <header id='top'>                           <!--Componentes do cabeçalho-->
+        <capa></capa>                               
+        <meu-menu></meu-menu>                         
     </header>
 
-    <main class="pure-g">
-        <div class="pure-u-1-2">
-            <p>barra lateral</p>
-        </div>
-        <div class="pure-u-1-2">
-            <p>
-                Home
-            </p>
+    <main id="main" class="pure-g">             <!--Componentes do corpo principal-->
+        <div class="pure-u-1">
+
+            {{ message }}
+                        
+            <calculadora></calculadora>
+
         </div>
     </main>
 
-    <section class="dashboard">
-        <!-- our dashboard pieces will go here -->
-    </section>
-    <footer>
-        <!-- copyright information can go here-->
-        <div class="footer">
-            <p>
-                <strong> Real Talk Diet Plans</strong> by <a href="https://github.com/renatolobojr">Renato</a> and <a
-                    href="https://github.com/TarcisioCarvalho">Tarcísio</a>. <br>
-                    The source code is licensed
-                <a href="https://github.com/TarcisioCarvalho/Dieta/blob/main/LICENSE">MIT</a>. <br> The website's repository
-                in <a href="https://github.com/TarcisioCarvalho/Dieta">GitHub</a>.
-            </p>
-        </div>
+    <footer id='bot'>                           <!-- componente do rodapé-->
+        <rodape></rodape>
     </footer>
 
     <!-- versão de desenvolvimento, inclui avisos úteis no console  -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/components.js"></script>
 
 </body>
 
