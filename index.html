@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcule sua Dieta</title>
+     <title>Dieta</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Calcule sua dieta</h1>
+  
+    <div id="cabecalho">
+            <div id="logo">
+               <h1>
+                   RT<span id="dieta">Dieta</span>
+               </h1>
+            </div>
+            <div id="menu">
+                <a href="">Contato</a>|
+                <a href="">Quem Somos</a>|
+                <a href="">Artigos</a>
+            </div>
+    </div>
 
-    <h2>Calcule seu IMC</h2>
-    <p>calculando seu indice de massa córporea você descobre o quanto peso precisa perder</p>
-    
-     <h2>Tempo pretendido</h2>
-    <p>Em quanto tempo pretende chegar em sua meta</p>
-    
-    <h2>Calcule sua TMB</h2>
-    <p>
-        Com sua taxa média basal conseguimos saber quanto seu corpo queima as calorias diariamente.
-        <a href="Calculadora/index.html">Clique aqui para acessar a calculadora de TMB.</a
-    ></p>
-       
-    <h2>Monte sua dieta</h2>
-    <p>Depois de saber sua meta diária, vamos montar sua dieta de acordo </p>
+    <div id="calculadora">
+        
+            
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+                <p>Idade:
+                    <input type="number" name="txtidade" id="txtidade" >Anos
+                <p>Peso:
+                    <input type="number" name="txtpeso" id="txtpeso" >Kg
+                <p>Altura:
+                    <input type="number" name="txtaltura" id="txtaltura" > cm
+                <p>Fator de Atividade:
+                    <input type="radio" name="radact" id="sedentario" >    
+                    <label for="sedentario">Sedentario</label>
+                    <input type="radio" name="radact" id="Pouco ativo" checked>
+                    <label for="pouco ativo">Pouco Ativo</label>  
+                    <input type="radio" name="radact" id="ativo">    
+                    <label for="ativo">Ativo</label>
+                    <input type="radio" name="radact" id="muito ativo" checked>
+                    <label for="muito ativo">Muito Ativo</label> 
+                
+            </p>
+           <p>
+            <input type="button" value="Calcular" onclick="calcular()">
+           </p> 
+        </p>
+    </div>
 
-    <p>Consulte a tabela nutricional dos alimentos em nosso site e monte sua dieta de forma gratuita.</p>
+  <div id="lero">
+        <h2>Lero Lero</h2>
+        <p>
+            As experiências acumuladas demonstram que o início da atividade geral de formação de atitudes 
+            garante a contribuição de um grupo importante na determinação do fluxo de informações.As experiências acumuladas demonstram que o início da atividade geral de formação de atitudes garante
+             a contribuição de um grupo importante na determinação do fluxo de informações.
+        </p>
+    </div>
 
-    <h2></h2>
     
 </body>
 </html>
