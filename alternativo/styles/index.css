@@ -1,0 +1,89 @@
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+
+.pure-menu-horizontal {
+    text-align: center;
+}
+
+.topo {
+    padding: 50px;
+    color: black;
+    text-align: center;
+    text-shadow: 3px 3px 10px white;
+    font-size: 25px;
+    height: 260px;  
+    width: 60%;
+    max-width: 750px;  
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../../imagens/logo.jpg');    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pure-g{
+    padding: 30px;    
+    /*height: 300px;  */
+    width: 65%;
+    max-width: 780px;  
+    min-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:burlywood;
+    display:flexbox;
+}
+
+.pure-form-aligned{
+    padding: 0px;
+    margin:0px;
+}
+
+input , button{
+    margin:5px;
+}
+
+.card{
+    font-size: 25px;
+    width: 49%; 
+    height: 300px; 
+}
+.card label{
+    padding:0px;
+}
+
+@media screen and (min-width: 0px) and (max-width:1150px)  {
+    .card {      
+      width:100%;
+    }
+  }
+
+.pure-button-primary {
+    color: black;
+    background: yellowgreen;
+    /* this is a green */
+}
+.pure-form fieldset {
+    padding: 0px;
+    color: white;
+
+}
+
+.footer{
+    
+    padding: 30px;
+    width: 65%;
+    max-width: 780px;  
+    min-width: 360px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(206, 238, 142);
+    background-size: cover;
+    
+}
