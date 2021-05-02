@@ -1,3 +1,7 @@
+
+
+
+
 function calcular(){
 
 let peso = 85;

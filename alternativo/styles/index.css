@@ -22,7 +22,7 @@
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../../imagens/logo.jpg');    
+    background-image: url('../img/logo.jpg');    
     background-repeat: no-repeat;
     background-size: cover;
 }
