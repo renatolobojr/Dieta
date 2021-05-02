@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-     <title>Dieta</title>
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta charset="UTF-8">
-     <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--adc a linha abaixo para sites reposnsivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--framework pure.css padrão-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css">
+    <!--Módulos adicionais-->
+    <!--link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css"-->
+
+    <!--Pesrsonalizado-->
+    <link rel="stylesheet" href="./styles/index.css">    
+
+    <title>Real Talk - Diet Plans</title>
 </head>
+
 <body>
-  
-    <div id="cabecalho">
-            <div id="logo">
-               <h1>
-                   RT<span id="dieta">Dieta</span>
-               </h1>
-            </div>
-            <div id="menu">
-                <a href="">Contato</a>|
-                <a href="">Quem Somos</a>|
-                <a href="">Artigos</a>
-            </div>
-    </div>
 
-    <div id="calculadora">
-        
+    <header>   
+        <Nav class="pure-menu pure-menu-horizontal">
             
-            <p>Sexo:
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem" checked>
-                <label for="fem">Feminino</label>
-                <p>Idade:
-                    <input type="number" name="txtidade" id="txtidade" >Anos
-                <p>Peso:
-                    <input type="number" name="txtpeso" id="txtpeso" >Kg
-                <p>Altura:
-                    <input type="number" name="txtaltura" id="txtaltura" > cm
-                <p>Fator de Atividade:
-                    <input type="radio" name="radact" id="sedentario" >    
-                    <label for="sedentario">Sedentario</label>
-                    <input type="radio" name="radact" id="Pouco ativo" checked>
-                    <label for="pouco ativo">Pouco Ativo</label>  
-                    <input type="radio" name="radact" id="ativo">    
-                    <label for="ativo">Ativo</label>
-                    <input type="radio" name="radact" id="muito ativo" checked>
-                    <label for="muito ativo">Muito Ativo</label> 
-                
-            </p>
-           <p>
-            <input type="button" value="Calcular" onclick="calcular()">
-           </p> 
-        </p>
-    </div>
+            <a href="./index.html" class="pure-menu-heading pure-menu-link">RT </a>
+        
+            <ul class="pure-menu-list">
+        
+                <li class="pure-menu-item"> <a href="pages/blog.html" class="pure-menu-link">Blog</a></li>
+                                     
+                                 
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">Dieta</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="pages/calculadoras.html" class="pure-menu-link">Calculadoras</a></li>
+                        <li class="pure-menu-item"><a href="pages/receitas.html" class="pure-menu-link">Receitas</a></li>
+                        <li class="pure-menu-item"><a href="pages/banco.html" class="pure-menu-link">Banco de Dados</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">Contatos</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"> <a href="pages/redes-sociais.html" class="pure-menu-link">Redes Sociais</a></li>
+                        <li class="pure-menu-item"> <a href="pages/parceiros.html" class="pure-menu-link">Parceiros</a> </li>
+                        <li class="pure-menu-item"> <a href="pages/trabalhe-conosco.html" class="pure-menu-link">Trabalhe conosco</a> </li>
+                        <li class="pure-menu-item"> <a href="pages/reporte-um-erro.html" class="pure-menu-link">reporte um erro</a> </li>
+                    </ul>
+                </li>
+                        
+                <li class="pure-menu-item"><a href="pages/sobre.html" class="pure-menu-link">Sobre</a></li>
+        
+            </ul>
+        
+        </Nav>
+        
+        <div  Class="topo">
+            <div style="padding: 5px;background-color: rgba(235, 232, 232, 0.5)">
+                <H1>Real Talk <br> Diet Plans</H1>
+                <p><strong> Monte sua dieta <br> sem frescuras</strong></p>
+            </div>
+        </div>
 
-  <div id="lero">
-        <h2>Lero Lero</h2>
-        <p>
-            As experiências acumuladas demonstram que o início da atividade geral de formação de atitudes 
-            garante a contribuição de um grupo importante na determinação do fluxo de informações.As experiências acumuladas demonstram que o início da atividade geral de formação de atitudes garante
-             a contribuição de um grupo importante na determinação do fluxo de informações.
-        </p>
-    </div>
+    </header>
+
+
+
+    <footer>
+        <!-- copyright information can go here-->
+        <div class="footer">
+            <p>
+                <strong> Real Talk Diet Plans</strong> by <a href="https://github.com/renatolobojr">Renato</a> and <a
+                    href="https://github.com/TarcisioCarvalho">Tarcísio</a>. <br>
+                    The source code is licensed
+                <a href="https://github.com/TarcisioCarvalho/Dieta/blob/main/LICENSE">MIT</a>. <br> The website's repository
+                in <a href="https://github.com/TarcisioCarvalho/Dieta">GitHub</a>.
+            </p>
+        </div>
+    </footer>
 
     
+
 </body>
+
 </html>
