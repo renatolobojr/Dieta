@@ -58,27 +58,29 @@
     </header>
 
     <main class="pure-g">
-        <div class="pure-u-1-2 card" name="formula">     
+        <div class="pure-u-1-2 card" name="formula"> 
+            
+                    <!--Painel da esquerda/ de cima-->
                     <div class="pure-control-group">
                         <label style="margin-left:70px;">Peso: </label><input style="width: 60px;" type="text" id="peso" placeholder="peso"/><span> Kg</span>
                     </div>
                     <div class="pure-control-group">
-                        <label style="margin-left:61.5px;">Altura: </label><input style="width: 60px;" type="text" name="altura" placeholder="altura"/><span> cm</span>
+                        <label style="margin-left:61.5px;">Altura: </label><input style="width: 60px;" type="text" id="altura" placeholder="altura"/><span> cm</span>
                     </div>
                     <div class="pure-control-group" >
-                        <label style="margin-left:64.5px;">Idade: </label><input style="width: 60px;" type="text" name="idade" placeholder="Idade" /><span> anos</span>
+                        <label style="margin-left:64.5px;">Idade: </label><input style="width: 60px;" type="text" id="idade" placeholder="Idade" /><span> anos</span>
                     </div>
                     <div class="pure-control-group">
-                        <label style="margin-left:70px;"">Sexo: </label>
+                        <label style="margin-left:70px;">Sexo: </label>
                         <a> 
-                            <label style="margin-left:0px;" class="pure-radio" style="width: 25px;"><input type="radio" name="sexo" value="masc"/> M</label>
-                            <label style="margin-left:0px;" class="pure-radio" style="width: 25px;"><input type="radio" name="sexo" value="fem" /> F</label>
+                            <label style="margin-left:0px;" class="pure-radio" style="width: 25px;"><input type="radio" name="sexo" value="1"/> M</label>
+                            <label style="margin-left:0px;" class="pure-radio" style="width: 25px;"><input type="radio" name="sexo" value="0" checked/> F</label>
                         </a>  
                         <div class="pure-control-group" style="margin-top:25px">
-                            <label style="margin-left:10px;">Peso Desejado: </label><input style="width: 60px;" type="text" name="peso" placeholder="Peso"/><span> Kg</span>
+                            <label style="margin-left:10px;">Peso Desejado: </label><input style="width: 60px;" type="text" id="desejado" placeholder="Peso"/><span> Kg</span>
                         </div>                    
                         <div class="pure-control-group" style="margin-bottom:25px">
-                            <label style="margin-left:10px;">Data Final: </label><input style="width: 200px;" type="date" name="peso" placeholder="Peso"/>
+                            <label style="margin-left:10px;">Data Final: </label><input style="width: 200px;" type="date" id="data" />
                         </div>
                        
                     </div>
@@ -87,14 +89,14 @@
         </div>
         <div class="pure-u-1-2 card">
                    
-
+                    <!--Painel da direita/de baixo-->
                     <div class="pure-control-group">
-                        <label>IMC: </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" name="imc" readonly=" "/>
-                        <label>TMB: </label><input style="width: 80px;border:none;background-color: rgba(0,0,0,0.1);" type="text" name="tmb" readonly=" "/> <span>Kcal</span>
+                        <label>IMC: </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" id="imc" readonly=" "/>
+                        <label>TMB: </label><input style="width: 80px;border:none;background-color: rgba(0,0,0,0.1);" type="text" id="tmb" readonly=" "/> <span>Kcal</span>
                     </div>
                     <div class="pure-control-group">
-                        <label>Meta: </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" name="imc" readonly=" "/> <span>Kg</span>
-                        <label>em </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" name="tmb" readonly=" "/> <span>dias</span>
+                        <label>Meta: </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" id="meta" readonly=" "/> <span>Kg</span>
+                        <label>em </label><input style="width: 60px;border:none;background-color: rgba(0,0,0,0.1);" type="text" id="dia" readonly=" "/> <span>dias</span>
                     </div>
 
                     <div class="pure-control-group"  style="margin-top:25px; font-size:40px; margin-left:50px">
@@ -102,11 +104,11 @@
                     </div>
 
                     <div class="pure-control-group"  style="margin-bottom:25px; font-size:40px; margin-left:70px">
-                        <input style="width: 120px;border:none;background-color: rgba(0,0,0,0.1);" type="text" name="imc" readonly=" "/> <span>Kcal</span>
+                        <input style="width: 120px;border:none;background-color: rgba(0,0,0,0.1);" type="text" id="dieta" readonly=" "/> <span>Kcal</span>
                     </div>
 
-                    <div class="pure-controls" style="margin:10px">                        
-                        <button style="margin-left:25px;width:310px;"class="pure-button pure-button-primary"  onclick="calcular()">Calcular</button>
+                    <div class="pure-controls" style="margin:10px;">                        
+                        <button style="margin-left:25px;width:310px;" class="pure-button pure-button-primary"  onclick='calcular()' >Calcular</button>
                     </div>   
         </div>
     </main>

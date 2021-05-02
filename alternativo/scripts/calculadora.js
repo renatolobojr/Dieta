@@ -1,29 +1,32 @@
-
-
-
+var sexo = 1; //1 = Masc e 0 = Fem
 
 function calcular(){
 
-let peso = 85;
-let peso_desejado = 75;
-let altura = 166;
-let idade = 34;
-let sexo = true; //true = M e false = F
+var peso = document.getElementById("peso");
+var desejo = document.getElementById("desejado");
+var altura = document.getElementById("altura");
+var idade = document.getElementById("idade");
+var sexo = document.getElementsByName("sexo"); 
+//sexy é um array, e para ver a opção marcada eu uso sexy[i].checked é true onde i é opção radio
 
-let dias = 140;
-let quilos = peso_desejado - peso;
+var imc = document.getElementById("imc");
+var tmb = document.getElementById("tmb");
 
-let imc = (peso * 10000)/(altura*altura); 
-console.log("IMC:" + imc);
+var quilo = document.getElementById("meta");
+var dia = document.getElementById("dia");
+var diet = document.getElementById("dieta");
 
-let tmbm = 66 + (13.8 * peso) + (5 * altura) - (6.8 * idade); //masculino
-let tmbf = 655 + (9.6 * peso) + (1.8 * altura) - (4.7 * idade); //feminino
-let tmb = (sexo) ? tmbm : tmbf;
+var tmbm = Math.round(66 + (13.8 * peso.value) + (5 * altura.value) - (6.8 * idade.value)); //masculino
+var tmbf = Math.round(655 + (9.6 * peso.value) + (1.8 * altura.value) - (4.7 * idade.value)); //feminino
 
-console.log("TMB: "+ tmb );
+imc.value = Math.round((peso.value * 100000)/(altura.value*altura.value))/10; 
+tmb.value = (sexo[0].checked) ? tmbm : tmbf;
+quilo.value = desejo.value - peso.value;
+dia.value = "180";
 
-let dieta = tmb + ((quilos*7700)/dias); // 1kg de gordura é equivalente a 7700 kcal
+diet.value = tmb.value - (((quilo.value)*-7700)/dia.value); // 1kg de gordura é equivalente a 7700 kcal
 
-console.log("Dieta: " + dieta);
+console.log("Dias: " + dia.value);
+console.log("Dieta: " + diet.value);
 
 }
